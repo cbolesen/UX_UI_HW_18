@@ -69,3 +69,12 @@ h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:black; 
 }
+.flexContainer{
+  display: flex;
+  padding: 5px;
+}
+.child{
+  width: 33%;
+  padding: 5px;
+  margin: auto;
+}
