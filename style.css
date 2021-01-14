@@ -127,12 +127,14 @@ h5{
 @media only screen and (max-width: 600){
   .flexContainer{
     flex-direction: column;
+  }
+  .child{
     width: 100%;
-}
-.workGrid{
-  grid-template-columns: 1fr;
-  grid-template-rows: 300px 300px 300px 300px;
-  grid-template-areas: 
+  }
+  .workGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: 
     "topLeftImage"
     "topRightImage"
     "bottomLeftImage"
