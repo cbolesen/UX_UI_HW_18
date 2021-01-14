@@ -124,7 +124,7 @@ h5{
   color:rgba(199, 53, 8, 0.884);
   margin-left: 500px;
 }
-@media only screen and (max-width: 600){
+@media only screen and  (max-width: 600){
   .flexContainer{
     flex-direction: column;
   }
