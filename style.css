@@ -94,8 +94,8 @@ h2{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  topLeftImage topRightImage
-  bottomLeftImage bottomRightimage
+  "topLeftImage" "topRightImage"
+  "bottomLeftImage" "bottomRightimage"
  ;
 }
 .topLeftImage {
@@ -123,4 +123,19 @@ h5{
   font-family: cursive; 
   color:rgba(199, 53, 8, 0.884);
   margin-left: 500px;
+}
+@media only screen and (max-width: 600){
+  .flexContainer{
+    flex-direction: column;
+    width: 100%;
+}
+.workGrid{
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-areas: 
+    "topLeftImage"
+    "topRightImage"
+    "bottomLeftImage"
+    "bottomRightimage"
+ ;
 }
