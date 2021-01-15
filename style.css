@@ -69,19 +69,8 @@ h2{
     font-family:'Architects Daughter', cursive;
     color:black; 
 }
-.flexContainer{
-  width: 550px;
-  display:inline-flex;
-  padding: 15px;
-  margin-left: 80px;
-}
-#child{
-  width: 200px;
-  height: 225px;
-  padding: 12px;
-  margin: 10px;
-  background-color: rgba(248, 247, 247, 0.726);
- }
+
+
 h3{
   font-size: 20px;
   padding: 2px;
@@ -124,11 +113,29 @@ h5{
   color:rgba(199, 53, 8, 0.884);
   margin-left: 500px;
 }
-@media only screen and (max-width: 600px) {
+.flexContainer{
+  /*width: 550px;*/
+  display: flex;
+  padding: 15px;
+  margin-left: 80px;
+  flex-direction: row;
+  background-color: #2F5259;
+}
+
+.child{
+  width: 200px;
+  height: 225px;
+  padding: 12px;
+  margin: 10px;
+  background-color: rgba(248, 247, 247, 0.726);
+ }
+
+@media only screen and (min-width: 300px) {
   .flexContainer {
-  flex-direction: column;  
+    flex-direction: column; 
+    background-color: blueviolet; 
   }     
-  #child {
+  .child {
     width: 100%;
   }
   #workGrid {
